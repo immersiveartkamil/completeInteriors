@@ -1,110 +1,41 @@
 .portfolio {
-    background-color: black;
+    width: 90%;
     display: flex;
-    align-items: center;
-    height: 100vh;
-    position: relative;
-        /* Add position relative to allow absolute positioning */
+    flex-direction: column;
+    margin-top: 125px;
+    margin-bottom: 200px;
 }
 
-.portfolio::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80vw;
-    /* Set the width of the top border to 80% of viewport width */
-    height: 1px;
-    /* Set the height of the top border */
-    background-color: rgba(220, 220, 220, 0.397);
-    /* Set the color of the top border */
-}
-
-.portfolio-container {
-    width: 100vw;
-    margin-left: 3%;
-    margin-right: 3%;
-}
-
-.portfolio-header {
+.portfolio-wrapper {
     display: flex;
-    justify-content: right;
-    /* Aligns items with space between */
-    margin-bottom: 30px;
-    margin-left: 60px;
-    color: white;
-}
-
-.portfolio-header h3 {
-    margin: 0;
-    font-size: 50px;
-    font-weight: 100;
-}
-
-.slider-container {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    margin-bottom: 2px;
-    padding-bottom: 2px;
-    margin-right: 10px;
     gap: 20px;
+    // overflow: hidden;
+    justify-content: center;
+    transform: translate(32%);
 }
 
 .portfolio-image {
-    width: 100%;
-    height: 400px;
-    /* Ustawiaj wysokość obrazków na stałe */
-    overflow: hidden;
+    height: 70vh;
+    /* Set the height of the container */
+
 }
 
 .portfolio-image img {
-    width: 100%;
     height: 100%;
-    object-fit: cover;
-    /* Przycina lub rozciąga obrazek, aby wypełnił kontener */
+    /* Ensure the image fills the container vertically */
+    object-fit: contain;
+    /* Ensure the entire image is visible within the container */
+    border-radius: 3px;
+    
 }
 
-.empty-space {
-    display: flex;
-    align-items: center;
-}
+.portfolio-header {
+    h3 {
+        margin: 0;
+        font-weight: 150;
+        font-size: 60px;
+        margin-left: 50px;
+        margin-bottom: 10px;
+    }
 
-svg:hover {
-    opacity: 1;
-    transform: scale(1);
-    transition: opacity 0.3s, transform 0.3s;
-}
-
-.svg-wrapper {
-    margin-right: 30px;
-    display: flex;
-    align-items: center;
-    /* Aligns items vertically */
-    gap: 3px;
-    /* Add gap between child elements */
-}
-
-.gallery-header {
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    /* Align items to the right */
-    margin-left: 60px;
-    color: white;
-}
-
-.gallery-header h3 {
-    margin: 0;
-    font-size: 50px;
-    font-weight: 100;
-}
-
-.gallery-header .svg-wrapper {
-    margin-left: 10px;
-    display: flex;
-    align-items: center;
-    gap: 3px;
 }
