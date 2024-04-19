@@ -1,7 +1,7 @@
 <?php /* Template Name: Strona Główna */ ?>
 <?php get_header(); ?>
 <div id="primary" class="content-area ">
-<?php include 'template-parts/hero.php'; ?>
+	<?php include 'template-parts/hero.php'; ?>
 	<section class="container-fluid about_us">
 		<div class="row">
 			<div class="col-lg-6  about_us__image"><img class="hero-image" src="http://complete-interior.local/wp-content/uploads/2024/04/about-us-1.png" alt=""></div>
