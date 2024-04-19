@@ -1,3 +1,30 @@
+
+.container-fluid.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-header {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-header h1 {
+    text-align: center;
+}
+
+.hero-background {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.hero-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+=======
 .hero{
     margin-top: 100px;
     display:flex;
@@ -61,3 +88,4 @@
         }
     }
 }
+
