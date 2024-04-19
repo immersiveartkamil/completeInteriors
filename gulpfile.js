@@ -10,7 +10,7 @@ log(c.green("Starting Gulp! Please wait..."));
 
 gulp.task("browser:sync", () => {
   browserSync.init({
-    proxy: "http://izi-design.local/",
+    proxy: "http://complete-interior.local/",
     injectChanges: true,
   });
 });
