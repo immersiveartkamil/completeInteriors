@@ -1,0 +1,39 @@
+.services-row {
+display: flex;
+width: 100%;
+justify-content: space-around;
+align-items: center;
+font-size: 20px;
+min-height: 30vh;
+border-top: 1px solid rgba(220, 220, 220, 0.397);
+}
+
+.services {
+    background-color: black;
+    color: white;
+}
+
+.services-header h3 {
+    margin-left: 5%;
+    font-size: 80px;
+    font-weight: 100;
+}
+
+.services-row-name {
+    width: 30%;
+    font-size: 30px;
+    margin-left: 2%;
+    text-align: left;
+}
+
+.services-row-number {
+    font-size: 30px;
+    font-weight: 100;
+    margin-left: 2%;
+}
+
+.services-row-description {
+    width: 50%;
+    font-weight: 200;
+    text-align: right;
+}

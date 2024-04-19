@@ -1,0 +1,66 @@
+$primary-color: #333333;
+$seconadary-color:#888888;
+$accent-color: #BBBBBB;
+
+@import 'components/menu.scss';
+@import 'typography.scss';
+@import 'normalize.scss';
+@import  'components/homepage.scss';
+@import 'components/hero.scss';
+@import 'components/about-us.scss';
+@import 'components/services.scss';
+@import 'components/portfolio.scss';
+@import 'components/footer.scss';
+@import 'components/partnerzy.scss';
+
+
+.quote{
+    position: relative;
+    }
+    .quote::before{
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-top: 4px solid #cab37c;
+    border-left: 4px solid #cab37c;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    }
+    .quote::after{
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-bottom: 4px solid #cab37c;
+    border-right: 4px solid #cab37c;
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    }
+
+body{
+    font-family: "Inter Tight", sans-serif;
+    background-color: whitesmoke;
+    color:black;
+}
+
+
+.custom-container{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.flex-col-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+
+}
+
+.w-section{
+    // margin-top: 20px;
+}
