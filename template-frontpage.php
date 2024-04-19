@@ -16,7 +16,8 @@
 	</section>
 </div>
 <?php include 'template-parts/logo.php'; ?>
-<?php include 'template-parts/services.php'; ?>
+<?php include 'template-parts/values.php'; ?>
+<?php include 'template-parts/advantages.php'; ?>
 
 
 <?php get_footer(); ?>

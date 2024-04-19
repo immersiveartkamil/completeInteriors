@@ -31,7 +31,7 @@
                     <nav id="site-navigation" class="main-navigation container">
                         <div class="site-branding">
                             <a href="<?php echo get_home_url(); ?>">
-                                <img class="branding-logo" src="http://complete-interior.local/wp-content/uploads/2024/04/logo.png" alt=""></a>
+                                <img class="branding-logo" src="http://complete-interior.local/wp-content/uploads/2024/04/logo.png" alt="" height="60" width="80"></a>
                         </div>
                         <div class="mobile-hamburger">
                             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
