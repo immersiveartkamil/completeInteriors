@@ -1,24 +1,25 @@
- .hero {
-     display: flex;
-     justify-content: flex-end;
-     background: url('http://complete-interior.local/wp-content/uploads/2024/04/hero.png') no-repeat right;
-     background-size: cover;
-     height: 100vh;
-     color: white;
-     padding: 50px;
-     box-sizing: border-box;
-     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
- }
+.container-fluid.hero {
+    position: relative;
+    overflow: hidden;
+}
 
- .hero-text {
-     max-width: 50%;
- }
+.hero-header {
+    position: relative;
+    z-index: 1;
+}
 
- .hero-text h1 {
-     font-size: 2.5em;
- }
+.hero-header h1 {
+    text-align: center;
+}
 
- .hero-text p {
-     font-size: 1.2em;
-     line-height: 1.6;
- }
+.hero-background {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.hero-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
