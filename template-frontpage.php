@@ -14,9 +14,10 @@
 			</div>
 		</div>
 	</section>
+	<?php include 'template-parts/logo.php'; ?>
+	<?php include 'template-parts/services.php'; ?>
 </div>
-<?php include 'template-parts/logo.php'; ?>
-<?php include 'template-parts/services.php'; ?>
+
 
 
 <?php get_footer(); ?>
