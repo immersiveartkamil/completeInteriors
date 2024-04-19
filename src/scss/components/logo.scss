@@ -1,0 +1,26 @@
+.logo-section {
+    max-width: 90%;
+    margin-top: 125px;
+}
+
+.logo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.logo-wrapper {
+    flex-grow: 1;
+    /* Wszystkie logo-wrappery zajmują tę samą przestrzeń */
+    margin: 10px;
+    text-align: center;
+}
+
+.logo-image {
+    width: 200px;
+    /* Dostosuj szerokość do preferencji */
+    height: 100px;
+    /* Dostosuj wysokość do preferencji */
+    object-fit: contain;
+    /* Zachowaj proporcje obrazu */
+}
