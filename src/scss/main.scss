@@ -5,7 +5,7 @@ $accent-color: #BBBBBB;
 @import 'components/menu.scss';
 @import 'typography.scss';
 @import 'normalize.scss';
-@import  'components/homepage.scss';
+@import 'components/homepage.scss';
 @import 'components/hero.scss';
 @import 'components/about-us.scss';
 @import 'components/services.scss';
@@ -13,6 +13,10 @@ $accent-color: #BBBBBB;
 @import 'components/footer.scss';
 @import 'components/partnerzy.scss';
 
+
+#wpadminbar{
+    display:none;
+}
 
 .quote{
     position: relative;
@@ -42,8 +46,9 @@ $accent-color: #BBBBBB;
 
 body{
     font-family: "Inter Tight", sans-serif;
-    background-color: rgb(0, 0, 0);
+    background-color: black;
     color:rgb(255, 255, 255);
+
 }
 
 
@@ -62,5 +67,5 @@ body{
 }
 
 .w-section{
-    // margin-top: 20px;
+min-height: 100vh;
 }
