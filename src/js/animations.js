@@ -20,7 +20,7 @@ function checkingGsap() {
   function my_stuff() {
     gsap.to(".portfolio-wrapper", {
       scrollTrigger: {
-        trigger: ".logo-section",
+        trigger: ".advantages",
         start: "bottom top",
         pin: ".portfolio", // Pin the portfolio section
         end: () => {
