@@ -1,3 +1,4 @@
+
 .container-fluid.hero {
     position: relative;
     overflow: hidden;
@@ -23,3 +24,68 @@
     width: 100%;
     height: auto;
 }
+=======
+.hero{
+    margin-top: 100px;
+    display:flex;
+    min-height: 30vh;
+    &__text{
+        width:25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h1{
+            font-size: 26px;
+            text-transform: uppercase;
+            transform: translate(40%, 15%);
+            font-weight: 400;
+            letter-spacing: 5px;
+            line-height: 1.5;
+            text-shadow: 5px 1px 0px black;
+            z-index: 2;
+        } 
+    }
+
+    &__img{
+        width:100%;
+        img{
+            max-width: 100%;
+            margin-left: auto;
+            filter: brightness(50%);
+        }
+    }
+}
+
+
+
+@media(min-width:1000px){
+    .hero{
+        margin-top: 100px;
+        display:flex;
+        &__text{
+            width:35%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h1{
+                font-size: 70px;
+                text-transform: uppercase;
+                transform: translateX(40%);
+                font-weight: 200;
+                letter-spacing: 5px;
+                line-height: 1.5;
+                text-shadow: 5px 1px 0px black;
+            } 
+        }
+    
+        &__img{
+            width:65%;
+            overflow: hidden;
+            img{
+                max-width: 100%;
+                margin-left: auto;
+            }
+        }
+    }
+}
+
