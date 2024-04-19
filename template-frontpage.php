@@ -4,7 +4,7 @@
 	<?php include 'template-parts/hero.php'; ?>
 	<section class="container-fluid about_us">
 		<div class="row">
-			<div class="col-lg-6  about_us__image"><img class="hero-image" src="http://complete-interior.local/wp-content/uploads/2024/04/about-us.png" alt=""></div>
+			<div class="col-lg-6  about_us__image"><img class="hero-image" src="http://complete-interior.local/wp-content/uploads/2024/04/about-us-1.png" alt=""></div>
 			<div class="col-lg-6  about_us__content">
 				<div class="about_us__heading_wrapper">
 					<p>COMPLETE INTERIOR</p>
@@ -16,6 +16,7 @@
 	</section>
 	<?php include 'template-parts/logo.php'; ?>
 	<?php include 'template-parts/services.php'; ?>
+	<?php include 'template-parts/portfolio.php'; ?>
 </div>
 
 
