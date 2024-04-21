@@ -216,7 +216,7 @@ function checkingGsap() {
       gsap.to(".portfolio-wrapper", {
         scrollTrigger: {
           trigger: ".portfolio",
-          start: "bottom bottom",
+          start: "top 20%",
           pin: ".portfolio", // Pin the portfolio section
           end: () => {
             const wrapperWidth =
@@ -226,7 +226,7 @@ function checkingGsap() {
           },
           scrub: true, // Smooth scrolling
         },
-        x: -document.querySelector(".portfolio-wrapper").offsetWidth - 7300, // Move portfolio-wrapper to the left
+        x: -document.querySelector(".portfolio-wrapper").offsetWidth - 13000, // Move portfolio-wrapper to the left
       });
 
       gsap.from(".footer__main_heading", {
