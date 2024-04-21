@@ -1,0 +1,150 @@
+.values{
+    max-width: 100%;
+    position: relative;
+    isolation: isolate;
+    min-height: 80vh;
+    margin: 4em 0;
+
+
+    &::before{
+        content: "";
+        display: block;
+        background-image: url('http://complete-interior.local/wp-content/uploads/2024/04/4879447-scaled.jpg');
+        background-size: contain;
+        filter: brightness(0.9);
+        width: 80%;
+        height: 100%;
+        position: absolute;
+        left:0; 
+        top:0;
+        z-index: -1;
+        border-radius: 20px;
+    }
+    &__text{
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: justify;
+        align-items: center;
+        font-size: 35px;
+        padding: 2em;
+
+        h2{
+            margin-bottom: 1em;
+
+        }
+    }
+    &__cards{
+        display: flex;
+        z-index: 1;
+        gap:10px;
+        align-items: center;
+        // overflow-x: hidden;
+
+    }
+    &__single{
+        min-width: 350px;
+        min-height: 60vh;
+        color:white;
+        background-color: black;
+        display:flex; 
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        box-shadow: 8px 2px 24px -8px rgba(66, 68, 90, 1);
+        border-radius: 13px;
+        padding: 2em;
+        opacity: .85;
+    }
+    &__title{
+        text-align: center;
+        font-size: 2em;
+        padding-bottom: 100px;
+    }
+    &__desc{
+        text-align: justify;
+        font-size: 1.2em;
+    }
+
+    &__wrapper {
+        align-self: center;
+        overflow: hidden;
+    }
+}
+
+.advantages{
+    max-width: 100%;
+    position: relative;
+    isolation: isolate;
+    min-height: 80vh;
+    margin: 4em 0;
+
+
+    &::before{
+        content: "";
+        display: block;
+        background-image: url('http://complete-interior.local/wp-content/uploads/2024/04/4879447-scaled.jpg');
+        background-size: contain;
+        width: 80%;
+        height: 100%;
+        position: absolute;
+        right:0; 
+        top:0;
+        z-index: -1;
+        border-radius: 20px;
+    }
+    &__text{
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        font-size: 35px;
+        padding: 2em;
+
+        h2{
+            margin-bottom: 1em;
+
+        }
+    }
+    &__cards{
+        display: flex;
+        flex-direction: row-reverse;
+        z-index: 1;
+        gap:10px;
+        align-items: center;
+        // overflow-x: scroll;
+
+    }
+    &__single{
+        min-width: 350px;
+            min-height: 60vh;
+            color: white;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            box-shadow: 8px 2px 24px -8px rgba(66, 68, 90, 1);
+            border-radius: 13px;
+            padding: 2em;
+            opacity: .85;
+    }
+    &__title{
+        text-align: center;
+        font-size: 2em;
+        padding-bottom: 100px;
+    }
+    &__desc{
+        
+        text-align: justify;
+        font-size: 1.2em;
+    }
+
+                &__wrapper {
+                    align-self: center;
+                    overflow: hidden;
+                }
+}

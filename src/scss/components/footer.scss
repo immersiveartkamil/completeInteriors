@@ -27,8 +27,7 @@ a,p{
     font-weight: 200;
 }
     &__col{
-    border-top: 0.1px solid rgba(220, 220, 220, 0.397);
-    border-bottom: 0.1px solid rgba(220, 220, 220, 0.397);
+
     min-height: 15vh;
     display: flex;
     flex-direction: column;
@@ -137,6 +136,8 @@ a,p{
 }
 
 .footer .row {
+        border-top: 0.1px solid rgba(220, 220, 220, 0.397);
+            border-bottom: 0.1px solid rgba(220, 220, 220, 0.397);
     width: 100%;
     display: flex;
     justify-content: space-between;

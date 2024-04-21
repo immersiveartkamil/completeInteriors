@@ -18,20 +18,69 @@ function checkingGsap() {
   }, 500);
 
   function my_stuff() {
-    gsap.to(".portfolio-wrapper", {
+    gsap.to(".services__cards", {
+      scrollTrigger: {
+        trigger: ".logo-section",
+        start: "bottom 10%",
+        pin: ".services",
+        end: () => {
+          const wrapperWidth =
+            document.querySelector(".services__cards").offsetWidth;
+          const translatedWidth = wrapperWidth * 2; // Considering 50% translation
+          return "+=" + (wrapperWidth + translatedWidth); // Adjusting the end position
+        },
+        scrub: true, // Smooth scrolling
+      },
+      x: -document.querySelector(".services__cards").offsetWidth - 1500,
+    });
+
+    gsap.to(".advantages__cards", {
       scrollTrigger: {
         trigger: ".advantages",
-        start: "bottom top",
+        start: "bottom bottom",
+        pin: ".advantages",
+        end: () => {
+          const wrapperWidth =
+            document.querySelector(".advantages__cards").offsetWidth;
+          const translatedWidth = wrapperWidth * 4; // Considering 50% translation
+          return "+=" + (wrapperWidth + translatedWidth); // Adjusting the end position
+        },
+        scrub: true, // Smooth scrolling
+      },
+      x: document.querySelector(".advantages__cards").offsetWidth + 2000,
+    });
+
+    gsap.to(".values__cards", {
+      scrollTrigger: {
+        trigger: ".values",
+        start: "bottom bottom",
+        pin: ".values",
+        end: () => {
+          const wrapperWidth =
+            document.querySelector(".values__cards").offsetWidth;
+          const translatedWidth = wrapperWidth * 2; // Considering 50% translation
+          return "+=" + (wrapperWidth + translatedWidth); // Adjusting the end position
+        },
+        scrub: true, // Smooth scrolling
+      },
+      x: -document.querySelector(".values").offsetWidth - 600,
+    });
+
+    gsap.to(".portfolio-wrapper", {
+      scrollTrigger: {
+        trigger: ".portfolio",
+        start: "bottom bottom",
         pin: ".portfolio", // Pin the portfolio section
         end: () => {
           const wrapperWidth =
             document.querySelector(".portfolio-wrapper").offsetWidth;
-          const translatedWidth = wrapperWidth * 0.1; // Considering 50% translation
-          return "+=" + (wrapperWidth - translatedWidth); // Adjusting the end position
+          const translatedWidth = wrapperWidth * 4; // Considering 50% translation
+          return "+=" + (wrapperWidth + translatedWidth); // Adjusting the end position
         },
         scrub: true, // Smooth scrolling
+        markers: true,
       },
-      x: -document.querySelector(".portfolio-wrapper").offsetWidth + 1000, // Move portfolio-wrapper to the left
+      x: -document.querySelector(".portfolio-wrapper").offsetWidth - 7000, // Move portfolio-wrapper to the left
     });
 
     gsap.from(".footer__main_heading", {
@@ -84,17 +133,34 @@ function checkingGsap() {
       },
     });
 
-    // Animation for map section
-    gsap.from(".mapa", {
-      opacity: 0,
-      y: 20,
-      scrollTrigger: {
-        trigger: ".mapa",
-        start: "top bottom",
-        end: "bottom bottom",
-        scrub: 1,
-      },
-    });
+    const logoContainers = document.querySelectorAll(".logo-container");
+
+    // Function to create GSAP animations for each logo
+    function animateLogos() {
+      // Loop through each logo container
+      logoContainers.forEach((container, index) => {
+        // Create a GSAP timeline for each logo
+        const tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: container,
+            start: "top bottom-=100", // Trigger animation when 100px from the bottom of the viewport
+            end: "+=100", // Adjust the end position as needed
+            scrub: 1,
+          },
+        });
+
+        // Add animation to each logo
+        tl.fromTo(
+          container,
+          { opacity: 0, y: 50 },
+          { opacity: 1, y: 0, ease: "power2.out" },
+          index * 0.2
+        ); // Staggering effect with 0.2s delay
+      });
+    }
+
+    // Call the function to animate logos
+    animateLogos();
   }
 }
 checkingGsap();
