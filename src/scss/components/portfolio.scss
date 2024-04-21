@@ -41,47 +41,50 @@
 }
 
 @media(max-width:799px) {
-
     .portfolio {
-            width: 90%;
-            display: flex;
-            flex-direction: column;
-            margin-top: 125px;
-            margin-bottom: 200px;
-        }
-    
-        .portfolio-wrapper {
-            display: flex;
-            gap: 20px;
-            // overflow: hidden;
-            justify-content: flex-start;
-            transform: translate(32%);
-        }
-    
-        .portfolio-image {
-            height: 70vh;
-            /* Set the height of the container */
-    
-        }
-    
-        .portfolio-image img {
-            
-            width: 100vw;
-            /* Ensure the image fills the container vertically */
-            object-fit: contain;
-            /* Ensure the entire image is visible within the container */
-            border-radius: 3px;
-    
-        }
-    
-        .portfolio-header {
-            h3 {
-                margin: 0;
-                font-weight: 150;
-                font-size: 60px;
-                margin-left: 50px;
-                margin-bottom: 10px;
-            }
-    
-        }
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 125px;
+        margin-bottom: 200px;
+overflow-x: hidden;
+        overflow-y: hidden;
+        /* Hide vertical scrollbar */
+        white-space: nowrap;
+        /* Ensure images stay in a single line */
     }
+
+    .portfolio-wrapper {
+        margin-top: 20px;
+        display: inline-block;
+        /* Ensure wrapper remains as wide as its contents */
+        white-space: nowrap;
+        /* Ensure images stay in a single line */
+    }
+
+    .portfolio-image {
+        width: 100vw;
+        /* Set image width to viewport width */
+        height: auto;
+        /* Allow images to maintain aspect ratio */
+        display: inline-block;
+        /* Make images inline-block to sit in a single line */
+    }
+
+    .portfolio-image img {
+        width: 100%;
+        /* Ensure image fills its container */
+        height: auto;
+        /* Allow images to maintain aspect ratio */
+        object-fit: cover;
+        /* Ensure entire image is visible within its container */
+    }
+
+    .portfolio-header h3 {
+        margin: 0;
+        font-weight: 150;
+        font-size: 60px;
+        margin-left: 50px;
+        margin-bottom: 10px;
+    }
+}
