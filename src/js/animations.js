@@ -30,12 +30,12 @@ function checkingGsap() {
           end: () => {
             const wrapperWidth =
               document.querySelector(".services__cards").offsetWidth;
-            const translatedWidth = wrapperWidth * 2; // Considering 50% translation
+            const translatedWidth = wrapperWidth * 8; // Considering 50% translation
             return "+=" + (wrapperWidth + translatedWidth); // Adjusting the end position
           },
           scrub: true, // Smooth scrolling
         },
-        x: -document.querySelector(".services__cards").offsetWidth - 1500,
+        x: -document.querySelector(".services__cards").offsetWidth - 2500,
       });
 
       gsap.to(".advantages__cards", {
@@ -46,12 +46,12 @@ function checkingGsap() {
           end: () => {
             const wrapperWidth =
               document.querySelector(".advantages__cards").offsetWidth;
-            const translatedWidth = wrapperWidth * 4; // Considering 50% translation
+            const translatedWidth = wrapperWidth * 12; // Considering 50% translation
             return "+=" + (wrapperWidth + translatedWidth); // Adjusting the end position
           },
           scrub: true, // Smooth scrolling
         },
-        x: document.querySelector(".advantages__cards").offsetWidth + 2000,
+        x: document.querySelector(".advantages__cards").offsetWidth + 2500,
       });
 
       gsap.to(".values__cards", {
@@ -62,12 +62,12 @@ function checkingGsap() {
           end: () => {
             const wrapperWidth =
               document.querySelector(".values__cards").offsetWidth;
-            const translatedWidth = wrapperWidth * 2; // Considering 50% translation
+            const translatedWidth = wrapperWidth * 8; // Considering 50% translation
             return "+=" + (wrapperWidth + translatedWidth); // Adjusting the end position
           },
           scrub: true, // Smooth scrolling
         },
-        x: -document.querySelector(".values").offsetWidth - 600,
+        x: -document.querySelector(".values").offsetWidth - 2470,
       });
 
       gsap.to(".portfolio-wrapper", {
