@@ -11,17 +11,18 @@
     gap: 20px;
     // overflow: hidden;
     justify-content: flex-start;
-    // transform: translate(32%);
+    transform: translate(32%);
 }
 
 .portfolio-image {
 
-    max-height: 80vh;
-    width: 100vw;
+    /* Set the height of the container */
 
-    img {
-            min-width: 100vw;
-            object-fit: contain;
+    .img {
+            height: 100%;
+            /* Ensure the image fills the container vertically */
+            object-fit: cover;
+            /* Ensure the entire image is visible within the container */
             border-radius: 3px;
     
         }
@@ -64,20 +65,21 @@ overflow-x: hidden;
 
     .portfolio-image {
     max-height: 276px;
-        overflow: hidden;
+    overflow: hidden;
+        height: auto;
+        /* Allow images to maintain aspect ratio */
         display: inline-block;
         /* Make images inline-block to sit in a single line */
-            .img {
-                    width: 100%;
-                    /* Ensure image fills its container */
-                    height: auto;
-                    /* Allow images to maintain aspect ratio */
-                    object-fit: cover;
-                    /* Ensure entire image is visible within its container */
-                }
     }
 
-
+    .portfolio-image img {
+        width: 100%;
+        /* Ensure image fills its container */
+        height: auto;
+        /* Allow images to maintain aspect ratio */
+        object-fit: cover;
+        /* Ensure entire image is visible within its container */
+    }
 
     .portfolio-header h3 {
         margin: 0;
