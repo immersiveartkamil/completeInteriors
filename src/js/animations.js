@@ -216,7 +216,7 @@ function checkingGsap() {
       gsap.to(".portfolio-wrapper", {
         scrollTrigger: {
           trigger: ".portfolio",
-          start: "top 20%",
+          start: "top 10%",
           pin: ".portfolio", // Pin the portfolio section
           end: () => {
             const wrapperWidth =
