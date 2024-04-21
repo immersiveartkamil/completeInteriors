@@ -80,7 +80,7 @@ function checkingGsap() {
         scrub: true, // Smooth scrolling
         markers: true,
       },
-      x: -document.querySelector(".portfolio-wrapper").offsetWidth - 7000, // Move portfolio-wrapper to the left
+      x: -document.querySelector(".portfolio-wrapper").offsetWidth - 7300, // Move portfolio-wrapper to the left
     });
 
     gsap.from(".footer__main_heading", {
