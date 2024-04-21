@@ -16,20 +16,10 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="form">
-                    <h3>Co możemy dla Ciebie zrobić?</h3>
-                    <form action="/submit_contact_form" method="post">
-                        <div class="form-wrapper">
-                            <div class="form-group">
-                                <input type="text" id="name" name="name" class="form-control" placeholder="Twoje imię i nazwisko" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" id="email" name="email" class="form-control" placeholder="Twój adres e-mail" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="tel" id="phone" name="phone" class="form-control" placeholder="Twój numer telefonu" required>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Wyślij</button>
-                        </div>
+                    <h3 style="text-align:center;">Co możemy dla Ciebie zrobić?</h3>
+                    <div class="footer-contact">
+                        <?php echo do_shortcode('[contact-form-7 id="1626366" title="Footer Contact"]'); ?>
+                    </div>
                 </div>
             </div>
         </div>
