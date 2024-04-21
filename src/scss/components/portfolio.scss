@@ -9,8 +9,8 @@
 .portfolio-wrapper {
     display: flex;
     gap: 20px;
-    max-height: 60vh;
-    overflow: hidden;
+    // max-height: 60vh;
+    // overflow: hidden;
     justify-content: flex-start;
     transform: translate(32%);
 }
@@ -19,8 +19,8 @@
 
     /* Set the height of the container */
 
-    .img {
-            height: 100%;
+    img {
+            max-height: 50%;
             /* Ensure the image fills the container vertically */
             object-fit: cover;
             /* Ensure the entire image is visible within the container */
