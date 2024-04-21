@@ -226,7 +226,7 @@ function checkingGsap() {
           },
           scrub: true, // Smooth scrolling
         },
-        x: -document.querySelector(".portfolio-wrapper").offsetWidth - 7100, // Move portfolio-wrapper to the left
+        x: -document.querySelector(".portfolio-wrapper").offsetWidth - 8600, // Move portfolio-wrapper to the left
       });
 
       gsap.from(".footer__main_heading", {
