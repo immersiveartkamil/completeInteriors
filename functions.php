@@ -163,15 +163,3 @@ add_filter(
     10,
     3
 );
-add_filter(
-    'nav_menu_link_attributes',
-    function ($atts, $item, $args) {
-        if (41 === $item->ID) { // change 1161 to the ID of your menu item.
-            $atts['data-target'] = '#partnerzy';
-        }
-
-        return $atts;
-    },
-    10,
-    3
-);
