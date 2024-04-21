@@ -2,7 +2,7 @@
 <?php get_header(); ?>
 <div id="primary" class="content-area ">
 	<?php include 'template-parts/hero.php'; ?>
-	<section class="container-fluid about_us">
+	<section id="about-us" class="container-fluid about_us">
 		<div class="row">
 			<div class="col-lg-6 cold-md-6 col-sm-12  about_us__image"><img class="hero-image" src="http://complete-interior.local/wp-content/uploads/2024/04/about-us-1.png" alt=""></div>
 			<div class="col-lg-6 cold-md-6 col-sm-12 about_us__content">
