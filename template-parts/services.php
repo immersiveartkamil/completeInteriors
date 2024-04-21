@@ -3,7 +3,7 @@
         <div class="col-lg-4 col-md-4 col-sm-12 services__text">
             <h2>Oferta:
             </h2>
-            Sprawdź co możemy dla Ciebie zrobić
+            <p>Sprawdź co możemy dla Ciebie zrobić</p>
         </div>
         <div class="col-lg-8 col-md-8 col-sm-12 services__wrapper">
             <div class="col-lg-8 col-md-8 col-sm-12 services__cards">
