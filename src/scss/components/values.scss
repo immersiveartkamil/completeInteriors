@@ -25,7 +25,6 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        text-align: justify;
         align-items: center;
         font-size: 35px;
         padding: 2em;
@@ -63,7 +62,6 @@
         padding-bottom: 100px;
     }
     &__desc{
-        text-align: justify;
         font-size: 1.2em;
     }
 
@@ -100,7 +98,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        text-align: justify;
         font-size: 35px;
         padding: 2em;
 
@@ -139,7 +136,7 @@
     }
     &__desc{
         
-        text-align: justify;
+        
         font-size: 1.2em;
     }
 
@@ -147,4 +144,21 @@
                     align-self: center;
                     overflow: hidden;
                 }
+}
+
+@media(max-width:700px){
+    .values{
+        &::before{
+            width: 100%;
+        }
+
+        &__text{
+            padding: .2em;
+            p{
+                font-size:26px;
+            }
+
+        }
+    }
+
 }
