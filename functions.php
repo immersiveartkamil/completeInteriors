@@ -119,7 +119,7 @@ add_filter(
     'nav_menu_link_attributes',
     function ($atts, $item, $args) {
         if (22 === $item->ID) { // change 1161 to the ID of your menu item.
-            $atts['data-target'] = '#o-nas';
+            $atts['data-target'] = '#about-us';
         }
 
         return $atts;
@@ -156,18 +156,6 @@ add_filter(
     function ($atts, $item, $args) {
         if (25 === $item->ID) { // change 1161 to the ID of your menu item.
             $atts['data-target'] = '#kontakt';
-        }
-
-        return $atts;
-    },
-    10,
-    3
-);
-add_filter(
-    'nav_menu_link_attributes',
-    function ($atts, $item, $args) {
-        if (41 === $item->ID) { // change 1161 to the ID of your menu item.
-            $atts['data-target'] = '#partnerzy';
         }
 
         return $atts;
