@@ -2,9 +2,9 @@
     <div class="row values">
         <div class="col-lg-4 col-md-4 col-sm-12 values__text">
             <h2>Wartości</h2>
-            Zapewniamy kompleksową usługę wykończenia wnętrz dla biznesu. Bierzemy pod uwagę
-            Twoje oczekiwania, budżet i specyfikę danego miejsca, tworząc przestrzeń idealnie
-            dopasowaną do Twoich potrzeb.
+            <p> Zapewniamy kompleksową usługę wykończenia wnętrz dla biznesu. Bierzemy pod uwagę
+                Twoje oczekiwania, budżet i specyfikę danego miejsca, tworząc przestrzeń idealnie
+                dopasowaną do Twoich potrzeb.</p>
         </div>
         <div class="col-lg-8 col-md-8 col-sm-12 values__wrapper">
             <div class="col-lg-8 col-md-8 col-sm-12 values__cards">

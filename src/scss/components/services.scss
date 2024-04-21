@@ -1,3 +1,6 @@
+
+
+
 .services{
     max-width: 100%;
     position: relative;
@@ -27,8 +30,10 @@
         justify-content: center;
         text-align: left;
         align-items: center;
-        font-size: 35px;
         padding: 2em;
+        p{
+            font-size: 35px;
+        }
 
         h2{
             margin-bottom: 1em;
@@ -63,7 +68,6 @@
         padding-bottom: 100px;
     }
     &__desc{
-        text-align: justify;
         font-size: 2em;
     }
 
@@ -73,3 +77,31 @@
     }
 }
 
+@media(max-width:700px){
+    .services{
+        &__desc{
+            font-size: 24px!important;
+        }
+
+        &__text{
+            p{
+                font-size: 26px;
+            }
+        }
+
+        &::before{
+            content: "";
+            display: block;
+            background-image: url('http://complete-interior.local/wp-content/uploads/2024/04/4879447-scaled.jpg');
+            background-size: contain;
+            filter: brightness(0.9);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left:0; 
+            top:0;
+            z-index: -1;
+            border-radius: 20px;
+        }
+    }
+}

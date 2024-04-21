@@ -51,8 +51,8 @@
         </div>
         <div class="col-lg-4 col-md-4 col-sm-12 advantages__text">
             <h2>Przewagi</h2>
-            Wybierając naszą firmę, zyskujesz nie tylko profesjonalną obsługę i najwyższej jakości
-            usługi, ale także partnera, który rozumie Twoje potrzeby i dba o Twój sukces.
+            <p> Wybierając naszą firmę, zyskujesz nie tylko profesjonalną obsługę i najwyższej jakości
+                usługi, ale także partnera, który rozumie Twoje potrzeby i dba o Twój sukces.</p>
         </div>
 
 
