@@ -1,11 +1,11 @@
 <section class="container-fluid logo-section">
     <div class="logo-container">
         <div class="logo-wrapper">
-            <img class="logo-image" src="http://complete-interior.local/wp-content/uploads/2024/04/wmspectrumlogo.png" alt="">
+            <img class="logo-image" src="https://completeinterior.pl/wp-content/uploads/2024/04/wmspectrumlogo.png" alt="">
             <p>Biuro projektowe</p>
         </div>
         <div class="logo-wrapper">
-            <img class="logo-image" src="http://complete-interior.local/wp-content/uploads/2024/04/accalogoalt-scaled-1.gif" alt="">
+            <img class="logo-image" src="https://completeinterior.pl/wp-content/uploads/2024/04/accalogoalt-scaled-1.gif" alt="">
             <p>Firma stolarska</p>
         </div>
         <div class="logo-wrapper">
@@ -37,11 +37,11 @@
             <p>Biuro projektowe</p>
         </div>
         <div class="logo-wrapper">
-            <img class="logo-image" src="http://complete-interior.local/wp-content/uploads/2024/04/logo-mk-inspiracje-200x200-1.png" alt="">
+            <img class="logo-image" src="https://completeinterior.pl/wp-content/uploads/2024/04/logo-mk-inspiracje-200x200-1.png" alt="">
             <p>Sklep meblowy</p>
         </div>
         <div class="logo-wrapper">
-            <img class="logo-image" src="http://complete-interior.local/wp-content/uploads/2024/04/logo-strona2.png" alt="">
+            <img class="logo-image" src="https://completeinterior.pl/wp-content/uploads/2024/04/logo-strona2.png" alt="">
             <p>Biuro projektowe</p>
         </div>
 

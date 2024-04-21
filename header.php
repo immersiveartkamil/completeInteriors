@@ -31,7 +31,7 @@
                     <nav id="site-navigation" class="main-navigation container">
                         <div class="site-branding">
                             <a href="<?php echo get_home_url(); ?>">
-                                <img class="branding-logo" src="http://complete-interior.local/wp-content/uploads/2024/04/logo.png" alt="" height="60" width="80"></a>
+                                <img class="branding-logo" src="https://completeinterior.pl/wp-content/uploads/2024/04/logo.png" alt="" height="60" width="80"></a>
                         </div>
                         <div class="mobile-hamburger">
                             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
@@ -117,10 +117,11 @@
 
                 requestAnimationFrame(raf);
                 // Grab all elements that have a "data-target" attribute
-                const regexPattern = /^http:\/\/localhost:3000\/#.*$/;
+                const regexPattern = /^https:\/\/completeinterior.pl\/#.*$/;
+
                 const currentPage = window.location.href;
 
-                if (regexPattern.test(currentPage) || currentPage == "http://localhost:3000/") {
+                if (regexPattern.test(currentPage) || currentPage == "https://completeinterior.pl/") {
                     const scrollButtons = document.querySelectorAll('[data-target]');
 
                     // For each element, listen to a "click" event
