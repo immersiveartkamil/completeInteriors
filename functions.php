@@ -119,7 +119,7 @@ add_filter(
     'nav_menu_link_attributes',
     function ($atts, $item, $args) {
         if (22 === $item->ID) { // change 1161 to the ID of your menu item.
-            $atts['data-target'] = '#o-nas';
+            $atts['data-target'] = '#about-us';
         }
 
         return $atts;
