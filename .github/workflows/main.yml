@@ -19,5 +19,5 @@ jobs:
         run: |
           cd C:\Users\Kamil\Local Sites\webcraft-design-studio\app\public\wp-content\themes\webcraft-theme
           git fetch origin
-          git reset --hard origin/main  # Change this to your branch name if needed
+          git reset --hard origin/test  # Change this to your branch name if needed
         shell: pwsh
