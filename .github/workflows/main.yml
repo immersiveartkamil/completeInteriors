@@ -20,4 +20,4 @@ jobs:
           cd C:\Users\Kamil\Local Sites\complete-interior\app\public\wp-content\themes\webcraft-theme
           git fetch origin
           git reset --hard origin/test  # Change this to your branch name if needed
-        shell: pwsh
+        shell: powershell
