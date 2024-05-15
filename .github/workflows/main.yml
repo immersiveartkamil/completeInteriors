@@ -17,7 +17,7 @@ jobs:
 
       - name: Pull Changes to Local Repository
         run: |
-          cd C:\path\to\your\local\repository
+          cd C:\Users\Kamil\Local Sites\webcraft-design-studio\app\public\wp-content\themes\webcraft-theme
           git fetch origin
           git reset --hard origin/main  # Change this to your branch name if needed
         shell: pwsh
